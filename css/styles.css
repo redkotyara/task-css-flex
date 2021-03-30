@@ -1,0 +1,573 @@
+.flexcontaiter{
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: Tex;
+    src: url(fonts/texgyreheros-bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Tex;
+    src: url(fonts/texgyreheros-regular.otf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(fonts/OpenSans-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+body { margin: 0;}
+
+#top {
+    background-color: red;
+    margin: 0px auto;
+    padding-bottom: 50px;
+}
+
+
+#ourwork {
+    font-size: 36px;
+    font-family: Tex;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 90px 0px 0px 0px;
+}
+
+#added {
+    font-size: 20px;
+    font-family: Tex;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.box {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+#tablecontainer {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.twopairs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.boxpair {
+    display: flex;
+    height: 250px;
+    width: 500px;
+}
+
+.ProjName {
+    color: white;
+    text-align: center;
+    font-family: Tex;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0px;
+}
+
+.menubottomtext {
+    text-align: center;
+    color: white;
+    font-family: Tex;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+    #tablecontainer {
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxpair {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 250px;
+    }
+    
+    .twopairs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ProjName {font-size: 25px;}
+
+    .menubottomtext {font-size: 20px;}
+    
+
+}
+
+@media only screen and (min-width: 500px) {
+    #tablecontainer {
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxpair {
+        display: flex;
+        flex-direction: row;
+        height: 250px;
+        width: 500px;
+    }
+    
+    .twopairs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ProjName {font-size: 25px;}
+
+    .menubottomtext {font-size: 20px;}
+    
+    .infoBorder {font-size: 12px;}
+}
+
+@media only screen and (min-width: 1000px) {
+    #tablecontainer {
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .twopairs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .boxpair {
+        display: flex;
+        height: 250px;
+        width: 500px;
+    }
+
+    
+}
+
+.telegram {
+    align-content: center;
+    margin: 0px;
+}
+
+.photo {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+
+
+@media only screen and (max-width: 420px) {
+    .ProjName {
+        color: white;
+        text-align: center;
+        font-family: Tex;
+        font-weight: 700;
+        font-size: 5px;
+        margin: 0px;
+    } 
+
+    .menubottomtext {
+        text-align: center;
+        color: white;
+        font-family: Tex;
+        font-weight: 700;
+        font-size: 3px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .ProjName {
+        color: white;
+        text-align: center;
+        font-family: Tex;
+        font-weight: 700;
+        font-size: 25px;
+        margin: 0px;
+    } 
+
+    .menubottomtext {
+        text-align: center;
+        color: white;
+        font-family: Tex;
+        font-weight: 700;
+        font-size: 20px;
+        margin: 0px;
+    }
+}
+
+.content > div:hover > p {
+    color: rgb(31, 199, 120);
+}
+
+.photo:hover { transform: scale(1.1);}
+
+.content {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    margin: 0px;
+    border: 0px;
+    background-color: rgb(243, 94, 89);
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle {
+    background-color: white;
+    width: 58px;
+    height: 5px;
+}
+
+#middle {
+    margin: 0px;
+    margin-top: 0px;
+    width: 100%;
+    background-color: rgb(18, 135, 191);
+    padding-bottom: 30px;
+}
+
+.triangle {
+    margin: 0px auto;
+    position: relative;
+    top: -40px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    content: "";
+    background-color: white;
+}
+
+
+#FreeAnalysis {
+    padding-top: 30px;
+    font-size: 36px;
+    line-height: 30px;
+    font-family: Tex;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
+
+#enter {
+    font-size: 20px;
+    font-family: Tex;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    margin-bottom: 12px;
+}
+
+#circle {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    content: "";
+    border-radius: 62px;
+    border: 2px solid white;
+    margin-bottom: 50px;
+    align-items: center;
+    position: relative;
+}
+
+#arrows {
+    height: 15px;
+    width: 15px;
+    content: "";
+    transform: rotate(45deg);
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    position: absolute;
+}
+
+
+
+#redcircle {
+    left: 52%;
+    bottom: 100px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-family: Tex;
+    border-radius: 25px;
+    background-color: red;
+    border: 4px solid white;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+
+#form {
+    margin: 0px auto;
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    height: 40%;
+    padding: 20px;
+}
+
+#formText {
+    margin: 0px auto;
+    color:grey;
+    font-family: Tex;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    padding: 0px;
+}
+
+@media only screen and (max-width: 320px){
+
+    .ProjName {font-size: 25px;}
+
+    .menubottomtext {font-size: 20px;}
+
+    .infoBorder {font-size: 12px;}
+}
+
+.infoBorder {
+    width: 65%;
+    height: 50px;
+    font-family: Tex;
+    font-size: 15px;
+    text-indent: 10%;
+    margin: 2px auto 5% auto;
+    border: 2px solid;
+    border-radius: 5px; 
+}
+
+.infoBorder:hover { border: 2px solid blue; }
+
+.submit {
+    width: 25%;
+    text-align: center;
+    height: 50px;
+    font-family: Tex;
+    display: block;
+    font-size: 18px;
+    background-color: rgb(222, 43, 36);
+    color: white;
+    padding: 1% 0% 1% 0%;
+    margin: 5% auto 5% auto;
+    border: 2px solid rgb(222, 43, 36);
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 1000px){
+    .submit {
+        width: 130px;
+        text-align: center;
+        height: 50px;
+        font-family: Tex;
+        display: block;
+        font-size: 18px;
+        background-color: rgb(222, 43, 36);
+        color: white;
+        padding: 1% 0% 1% 0%;
+        margin: 5% auto 5% auto;
+    }
+}
+
+#fieldcontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 25%;
+}
+
+#bottom {
+    background-color: rgb(42, 42, 42);
+    margin: 0px;
+    width: 100%;
+}
+
+#bottomtext {
+    font-family: Tex;
+    color: white;
+    text-align: center;
+    font-size: 29px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 0px 0px 30px 0px;
+    padding-top: 30px;
+}
+
+#logoscontainer {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+
+
+#logos {
+    margin: 20px auto 30px auto;
+    padding: 0px;
+    width: 20%;
+    display: flex;
+    position: relative;
+}
+
+#logos::before {
+    position: absolute;
+    padding-top: 100%;
+}
+
+.logobox {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 4px;
+    margin-right: 4px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid grey;
+    border-radius: 5px;
+}
+
+.logobox:hover { border: 3px solid red;}
+
+
+.logobox::before {
+    content: "";
+    padding-top: 100%;
+}
+
+
+.logophoto {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    justify-content: center;
+}
+
+#subscribetext {
+    color: rgb(206, 206, 206);
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: OpenSans;
+    margin: 0px 0px 30px 0px;
+    padding-top: 15px;
+}
+
+#email {
+    width: 50%;
+    height: 54px;
+    text-indent: 5px;
+    font-family: OpenSans;
+    display: block;
+    margin: 2px auto 40px auto;
+    padding: 0px;
+    background-color: rgb(81, 81, 81);
+    color:rgb(206, 206, 206);
+    border: 0px;
+}
+
+@media only screen and (max-width: 500px){
+    #email {
+        width: 67%;
+        height: 54px;
+        text-indent: 5px;
+        font-family: OpenSans;
+        display: block;
+        margin: 2px auto 40px auto;
+        padding: 0px;
+        background-color: rgb(81, 81, 81);
+        color:rgb(206, 206, 206);
+        border: 0px;
+    }
+
+    .ProjName {font-size: 25px;}
+
+    .menubottomtext {font-size: 20px;}
+    
+    .infoBorder {font-size: 12px;}
+}
+
+
+
+#SubscribeButton {
+    width: 153px;
+    height: 53px;
+    display: block;
+    font-family: Tex;
+    height: 60px;
+    margin: 40px auto 70px auto;
+    padding: 0px;
+    background-color:rgb(42, 42, 42);
+    color: white;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 700px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+#copyright {
+    text-align: center;
+    background-color: rgb(81, 81, 81);
+    padding: 15px;
+    color: rgb(206, 206, 206);
+    font-size: 14px;
+    font-family: OpenSans;
+    line-height: 27px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.altlogo { color: white; }
